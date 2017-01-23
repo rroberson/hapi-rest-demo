@@ -54,7 +54,9 @@ module.exports = function() {
 				'database' : 'dellstore2'
 			},
 			'development' : {
-				'host' : 'dellstore2.cgffdp2lclff.us-west-2.rds.amazonaws.com',
+				// His AWS host and me changing now to run off the localhost: my local Ubuntu dev srvr
+				// 'host' : 'dellstore2.cgffdp2lclff.us-west-2.rds.amazonaws.com',
+				'host' : 'localhost',
 				'user' : 'spidertutorial',
 				'password' : 'spidertutorial',
 				'database' : 'dellstore2'
