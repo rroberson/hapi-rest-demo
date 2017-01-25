@@ -13,11 +13,14 @@ module.exports = function () {
 	// My notes: From his Github, this was not commented out (representing final state), but I am commenting 
 	//           out initially, to be more like his overall flow, where in the video, it was commented because
 	//           he uncomments it at the end to use Github changes triggering new flows, etc.
-        // {
-        //     method: 'GET',
-        //     path: '/products/title/{title}',
-        //     handler: productController.findByName
-        // },
+	//
+	//           Now, since end of course, where he wants this now in effect and this findByName REST API
+	//           in effect, uncommenting:
+        {
+             method: 'GET',
+             path: '/products/title/{title}',
+             handler: productController.findByName
+        },
         {
             method: 'GET',
             path: '/products',
