@@ -11,7 +11,7 @@ export NODE_HOST=localhost
 export NODE_PORT=8080
 
 echo "\nRUNNING_AS:\n `id`" | tee $APP_RUNTIME_LOG
-echo "\nKILLING existing process if running: "
+echo "\nKILLING existing App process if running: " | tee -a $APP_RUNTIME_LOG
 pgrep -f "node /myapp/index.js" | tee -a $APP_RUNTIME_LOG
 pkill -f "node /myapp/index.js"
 
